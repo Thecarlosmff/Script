@@ -1,0 +1,22 @@
+SIMPLE BATCH BACKGROUND REMOVER:
+for %x in ("C:\Screenshots\*") do py PyRun.py PyFunction.ImageToText.remove_bg "%x"
+
+SIMPLE BACKGROUND REMOVER:
+py PyRun.py PyFunction.ImageToText.remove_bg image23.png
+
+BATCH BACKGROUND REMOVER:
+for %x in ("C:\Screenshots\*") do py PyRun.py PyFunction.ImageToText.remove_bg "%x" 0 5 130 20 70 255 clean/
+
+BACKGROUND REMOVER:
+py PyRun.py PyFunction.ImageToText.remove_bg image23.png 0 5 130 20 70 255 clean/
+
+BATCH IMG TO TEXT (JPN)
+for %x in (*) do D:\Programas\Tesseract-OCR\tesseract.exe %x stdout >>result.txt -l jpn
+
+BATCH IMG TO TEXT (ENG)
+for %x in (*) do D:\Programas\Tesseract-OCR\tesseract.exe %x stdout >>result.txt
+
+
+* [Tesseract-OCR Download](https://github.com/UB-Mannheim/tesseract/wiki) | [Tesseract-OCR GitHub](https://github.com/tesseract-ocr)
+* [Greenshot](https://getgreenshot.org/downloads/)
+* [Python 3.9](https://www.python.org/downloads/)
